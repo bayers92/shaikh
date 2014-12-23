@@ -100,6 +100,18 @@
   height: 100%;
 }
 /* line 1544, ../scss/_settings.scss */
+.full-page .bg_overlay {
+  position: absolute;
+  z-index: -1000;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+/* line 1555, ../scss/_settings.scss */
 .full-page .home-title {
   top: 50%;
   /*left: 50%;*/
@@ -111,11 +123,11 @@
   text-align: center;
   color: #ef5745;
 }
-/* line 1554, ../scss/_settings.scss */
+/* line 1565, ../scss/_settings.scss */
 .full-page .home-title h1, .full-page .home-title h3 {
   font-weight: bold;
 }
-/* line 1557, ../scss/_settings.scss */
+/* line 1568, ../scss/_settings.scss */
 .full-page .home-title .arrow:hover {
   -webkit-transition: 1s ease-in-out;
   -moz-transition: 1s ease-in-out;
@@ -128,7 +140,7 @@
   transform: translate(0, 1em);
 }
 
-/* line 1574, ../scss/_settings.scss */
+/* line 1585, ../scss/_settings.scss */
 .tumblr_posts {
   width: 100%;
   position: relative;
@@ -141,7 +153,7 @@
   list-style: none;
   list-style-type: none;
 }
-/* line 1585, ../scss/_settings.scss */
+/* line 1596, ../scss/_settings.scss */
 .tumblr_posts li {
   width: 90%;
   margin-left: auto !important;
@@ -150,26 +162,26 @@
   padding-bottom: 25px !important;
   border-bottom: thin solid #c2c0c0;
 }
-/* line 1592, ../scss/_settings.scss */
+/* line 1603, ../scss/_settings.scss */
 .tumblr_posts li a {
   font-size: 1.6875rem;
   color: dimgray !important;
 }
-/* line 1595, ../scss/_settings.scss */
+/* line 1606, ../scss/_settings.scss */
 .tumblr_posts li a:hover {
   color: #ef5745 !important;
 }
-/* line 1600, ../scss/_settings.scss */
+/* line 1611, ../scss/_settings.scss */
 .tumblr_posts li .tumblr_description .link_og_blockquote {
   border: none !important;
   color: #c2c0c0 !important;
   margin-bottom: 0px !important;
 }
-/* line 1605, ../scss/_settings.scss */
+/* line 1616, ../scss/_settings.scss */
 .tumblr_posts li .tumblr_description p {
   color: #c2c0c0;
 }
-/* line 1614, ../scss/_settings.scss */
+/* line 1625, ../scss/_settings.scss */
 .tumblr_posts li .tumblr_caption p {
   margin-top: 5px;
   color: #c2c0c0;
@@ -177,31 +189,31 @@
 }
 
 /* remove scroll bars in Safari */
-/* line 1624, ../scss/_settings.scss */
+/* line 1635, ../scss/_settings.scss */
 .off-canvas-wrap .main-section:-webkit-scrollbar {
   display: none;
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 1630, ../scss/_settings.scss */
+  /* line 1641, ../scss/_settings.scss */
   body, html {
     height: 100%;
     width: 100%;
   }
 
-  /* line 1634, ../scss/_settings.scss */
+  /* line 1645, ../scss/_settings.scss */
   .off-canvas-wrap, .inner-wrap {
     height: 100%;
   }
 
-  /* line 1638, ../scss/_settings.scss */
+  /* line 1649, ../scss/_settings.scss */
   .off-canvas-wrap .main-section {
     height: 100%;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
   }
 }
-/* line 1646, ../scss/_settings.scss */
+/* line 1657, ../scss/_settings.scss */
 #loader {
   position: absolute;
   top: 50%;
@@ -212,7 +224,7 @@
   margin-top: -40px;
 }
 
-/* line 1656, ../scss/_settings.scss */
+/* line 1667, ../scss/_settings.scss */
 #loading_title {
   text-align: center;
   color: #ef5745;
