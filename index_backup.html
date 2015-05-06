@@ -36,7 +36,7 @@
 		// Wait for window load
 		$(window).load(function() {
 				// Animate loader off screen
-				$("#loading_page").delay(000).animate({
+				$("#loading_page").delay(2000).animate({
 					top: -1000
 				}, 400);
 			});
@@ -50,14 +50,32 @@
 			<img src="img/preloader.gif" id="loader">
 		</div>
 
+		<!-- START HOMEPAGE -->
+		<div class = "full-page show-for-medium-up">
+			<div class = "bg"></div>
+			<div class = "bg_overlay"></div>
+			<div class = "home-title">
+				<a href="#about">
+					<h1>Mohammad Shaikh</h1>
+					<h3>Competitive Strategy & Finance</h3>
+				</a>
+				<div class = "arrow"><a href="#about"><i class="fa fa-angle-double-down fa-4x"></i></a> </div>
+			</div>
+		</div>
+		<!-- END HOMEPAGE -->
+
 		<div class="off-canvas-wrap fixed" data-offcanvas>
 			<div class="inner-wrap">
 
-				<!-- MOBILE NAV BAR -->
+				<!-- MOBILE NAVIGATION BAR -->
 				<div class = "fixed">
 					<nav class="tab-bar show-for-small-only">
 						<section class="left-small">
 							<a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+						</section>
+
+						<section class="middle tab-bar-section">
+							<h1 class="title">Mohammad Shaikh</h1>
 						</section>
 					</nav>
 				</div>
@@ -68,60 +86,14 @@
 						<li><label>Mohammad Shaikh</label></li>
 						<li><a href="#about"><i class="fa fa-user fa-1x"></i>&nbsp;&nbsp;&nbsp;&nbsp;About</a></li>
 						<li><a href="#projects"><i class="fa fa-star fa-1x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Projects</a></li>
-						<li><a href="#blog"><i class="fa fa-comment fa-1x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Reading List</a></li>
-						<li><a href="#instagram"><i class="fa fa-instagram fa-1x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Photos</a></li>
+						<li><a href="#blog"><i class="fa fa-comment fa-1x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Blog</a></li>
+						<li><a href="#instagram"><i class="fa fa-instagram fa-1x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Instagram</a></li>
 						<li><a href="mailto:Mohammad.Shaikh@Simon.Rochester.edu"><i class="fa fa-envelope-o fa-1x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Contact</a></li>
 					</ul>
 				</aside>
-
-				<!-- MOBILE NAVIGATION BAR ... old -->
-<!-- 				<div class = "fixed">
-					<nav class="tab-bar show-for-small-only">
-						<section class="left-small">
-							<a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
-						</section>
-
-						<section class="middle tab-bar-section">
-							<h1 class="title">Mohammad Shaikh</h1>
-						</section>
-					</nav>
-				</div> -->
-
 				<!-- END MOBILE NAV OFFCANVAS -->
 
-			<!-- 	<section class="main-section"> -->
-				<!-- START HOMEPAGE -->
-<!-- 				<div class = "full-page">
-					<div class = "bg"></div>
-					<div class = "bg_overlay"></div>
-					<div class = "home-title">
-						<a href="#about">
-							<h1>Mohammad Shaikh</h1>
-							<h3>Competitive Strategy & Finance</h3>
-						</a>
-						<div class = "arrow"><a href="#about"><i class="fa fa-angle-double-down fa-4x"></i></a> </div>
-					</div>
-				</div> -->
-				<!-- END HOMEPAGE -->
-
-							<section class="main-section">
-
-
-          <div class = "row hero">
-            <div class = "small-12 columns text-center logo">
-              						<a href="#about">
-							<h1>Mohammad Shaikh</h1>
-							<h3>Competitive Strategy & Finance</h3>
-						</a>
-            </div>
-            <div class = "small-12 small-centered columns text-center arrow">
-              <a href="#about"><i class="fa fa-angle-double-down fa-4x"></i></a>
-            </div>
-          </div>
-          <!-- END hero row -->
-
-
-
+				<section class="main-section">
 					<div class = "show-for-medium-up">
 
 						<!-- START DESKTOP NAVIGATION -->
@@ -129,8 +101,8 @@
 							<dl class="sub-nav">
 								<dd data-magellan-arrival="about"><a href="#about">About</a></dd>
 								<dd data-magellan-arrival="projects"><a href="#projects">Projects</a></dd>
-								<dd data-magellan-arrival="blog"><a href="#blog">Reading List</a></dd>
-								<dd data-magellan-arrival="instagram"><a href="#instagram">Photos</a></dd>
+								<dd data-magellan-arrival="blog"><a href="#blog">Blog</a></dd>
+								<dd data-magellan-arrival="instagram"><a href="#instagram">Instagram</a></dd>
 								<dd><a href="mailto:Mohammad.Shaikh@Simon.Rochester.edu">Contact</a></dd>
 							</dl>
 						</div>
@@ -158,29 +130,55 @@
 							<div class ="small-12 small-centered columns">
 								<p>I am currently a 2016 MBA candidate at Simon Business School (University of Rochester) completing a dual concentration in competitive strategy and finance. I am looking for an opportunity to apply my education and experience where these two subject intersect. I have a deep understanding of the capital markets through my past work experiences. Prior to starting my MBA this year, I won the Fidelity Stock Pitch Competition at the <a href="http://mbajumpstart.org"> MBA JumpStart </a> conference and participated in a Private Equity Boot Camp where I had the opportunity to pitch an LBO of Pfizer.<br/> <br/>
 
-									My other interests include community development, entrepreneurship and athletics. I founded 
-									<a href="http://wearenayp.org">NAYP</a> a non-for-profit that promotes financial literacy and college readiness for underserved high school students which I continue to run. I have also trained Muay Thai and ran Varsity track and basketball in school.
+								My other interests include community development, entrepreneurship and athletics. I founded 
+								<a href="http://wearenayp.org">NAYP</a> a non-for-profit that promotes financial literacy and college readiness for underserved high school students which I continue to run. I have also trained Muay Thai and ran Varsity track and basketball in school.
 								</p>
 							</div>
 						</div>
 
 						<div class = "row">
 							<div class = "small-12 small-centered columns">
-								<a href = "Shaikh_Resume.pdf"><i class="fa fa-paperclip fa-2x"></i> &nbsp; View Full Resume </a><br/><br/><br/>
+								<a href = "Shaikh_Resume.pdf"><i class="fa fa-paperclip fa-2x"></i> &nbsp; View Full Resume </a><br/><br/>
 							</div>
 						</div>
 
-						<div class = "row pastExperience">
+						<div class = "row">
 							<div class = "small-12 small-centered columns">
-								<h4> Past Experience </h4>
-								<div class = "small-12 medium-4 columns text-center">
-									<a href="https://www.blackrock.com/"> <img src = "img/blackrock.png"></img></a>
+								<h3> Education </h3>
+								<div class = "larger-text"> University of Rochester - Simon Business School </div>
+								<div class = "smaller-text">
+									&nbsp; <em> MBA - Concentrations: Competitive Strategy & Finance </em> <br/>
+									&nbsp; <em> <a href="http://www.simon.rochester.edu/clubs/simon-school-venture-capital-fund/index.aspx"> Simon Venture Capital Fund </a>- Portfolio Management and Due Diligence Analyst </em> <br/>
+									&nbsp; <em> Distinctions - <a href="http://awards.rochester.edu/people/112/ronald-fielding/"> Ronald Fielding Scholarship </a> (merit based scholarship)</em> <br/>
 								</div>
-								<div class = "small-12 medium-4 columns text-center">
-									<a href="http://www.rbcroyalbank.com/personal.html"> <img src = "img/RBC.jpg"></img></a>
+
+								<div class = "larger-text"> Hunter College (Class of 2008) </div>
+								<div class = "smaller-text">
+									&nbsp; <em> BS - Accounting & Psychology </em> <br/>
+									&nbsp; <em> Dean's List </em> <br/>
 								</div>
-								<div class = "small-12 medium-4 columns text-center">
-									<a href="http://www.kpmg.com/US/en/Pages/default.aspx"> <img src = "img/KPMG.png"></img></a>
+
+								<div class = "larger-text"> Abraham Lincoln (Class of 2004) </div>
+								<div class = "smaller-text">
+									&nbsp; <em> Institutions in Professions in Science Graduate Honors Society </em> <br/>
+								</div>
+
+								<h3> Experience </h3>
+
+								<div class = "larger-text"> BlackRock - Alternative Investment (real-estate)</div>
+								<div class = "smaller-text">
+									&nbsp; <em> Associate - Acquisitions Associate - Investment Management </em> <br/>
+									&nbsp; <em> Sustainability Committee - Member  </em> <br/>
+								</div>
+
+								<div class = "larger-text"> Royal Bank of Canada</div>
+								<div class = "smaller-text">
+									&nbsp; <em> Senior Analyst - Fixed Income and Financial reporting </em> <br/>
+								</div>
+
+								<div class = "larger-text"> KPMG - Senior Auditor/Risk Advisor</div>
+								<div class = "smaller-text">
+									&nbsp; <em> Industry: Consumer, Energy, Healthcare </em> <br/>
 								</div>
 							</div>
 						</div>
@@ -228,59 +226,64 @@
 					<!-- START BLOG SECTION -->
 					<div class = "content section">
 						<a name = "blog" data-magellan-destination="blog"></a>
-						<div class = "row blog">
-							<div class = "small-12 columns">
-								<h3 class = "header center-text"> Reading List </h3>
-								<ul class="no-bullet">
-									<script type="text/javascript" src="http://moshaikh-simon.tumblr.com/js"></script>
-								</ul>
-<!-- 						<div class = "row">
+						<div class = "row">
+							<div class = "small-12 small-centered columns center-text">
+								<h3> Blog </h3>
+							</div>
+							<div class = "small-12 small-centered columns">
+								<h5 class = "header center-text"> Some of my favorite articles from around the web </h5>
+							</div>
+						</div>
+						<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
+							<script type="text/javascript" src="http://moshaikh-simon.tumblr.com/js"></script>
+						</ul>
+						<div class = "row">
 							<div class = "small-12 small-centered columns center-text">
 								<p> <a href="http://brian-ayers.tumblr.com/"> View full blog.. </a> </p>
 							</div>
-						</div> -->
-					</div>
-				</div>
-			</div>
-			<!-- END BLOG SECTION -->
-
-
-			<!-- START INSTAGRAM SECTION -->
-			<div class = "content section">
-				<a name = "instagram" data-magellan-destination="instagram"></a>
-				<div class = "row">
-					<div class = "small-12 columns center-text">
-						<h3 class = "header"> Photos </h3>
-						<div id="instafeed"></div>
-					</div>
-				</div>
-			</div>
-			<!-- END INSTAGRAM SECTION -->
-
-			<!-- START FOOTER SECTION -->
-			<div class = "footer section">
-				<div class = "row">
-					<div class = "small-12 large-4 small-centered columns">
-						<div class = "icons">
-							<a href="https://www.facebook.com/mohammad.shaikh.775"><i class="fa fa-facebook fa-1x"></i></a>
-							<a href="https://www.linkedin.com/in/moalishaikh​/"><i class="fa fa-linkedin fa-1x"></i></a>
-							<a href="http://instagram.com/moshaikh23"><i class="fa fa-instagram fa-1x"></i></a>
 						</div>
 					</div>
-					<div class = "small-12 large-8 small-centered columns">
-						<a href="mailto:Mohammad.Shaikh@Simon.Rochester.edu"><i class="fa fa-envelope-o fa-1x"></i> &nbsp; Mohammad.Shaikh@Simon.Rochester.edu</a>
-					</div>		
-				</div>
-			</div>
-			<!-- END FOOTER SECTION -->
-		</section> 
-		<!-- END MAIN SECTION -->
-		<a class="exit-off-canvas"></a>
-	</div>
-	<!-- END OFF-CANVAS WRAP -->
+					<!-- END BLOG SECTION -->
 
-	<script src="bower_components/foundation/js/foundation.min.js"></script>
-	<script src="js/app.js"></script>
-	<!-- // <script src="js/foundation/foundation.offcanvas.js"></script> -->
-</body>
-</html>
+
+					<!-- START INSTAGRAM SECTION -->
+					<div class = "content section">
+						<a name = "instagram" data-magellan-destination="instagram"></a>
+						<div class = "row">
+							<div class = "small-12 small-centered columns center-text">
+								<h3 class = "header"> Instagram Feed </h3>
+							</div>
+							<div class = "small-12 small-centered columns center-text">
+								<div id="instafeed"></div>
+							</div>
+						</div>
+					</div>
+					<!-- END INSTAGRAM SECTION -->
+
+					<!-- START FOOTER SECTION -->
+					<div class = "footer section">
+						<div class = "row">
+							<div class = "small-12 large-4 small-centered columns">
+								<div class = "icons">
+									<a href="https://www.facebook.com/mohammad.shaikh.775"><i class="fa fa-facebook fa-1x"></i></a>
+									<a href="https://www.linkedin.com/in/mohammadalishaikh1/"><i class="fa fa-linkedin fa-1x"></i></a>
+									<a href="http://instagram.com/moshaikh23"><i class="fa fa-instagram fa-1x"></i></a>
+								</div>
+							</div>
+							<div class = "small-12 large-8 small-centered columns">
+								<a href="mailto:Mohammad.Shaikh@Simon.Rochester.edu"><i class="fa fa-envelope-o fa-1x"></i> &nbsp; Mohammad.Shaikh@Simon.Rochester.edu</a>
+							</div>		
+						</div>
+					</div>
+					<!-- END FOOTER SECTION -->
+				</section> 
+				<!-- END MAIN SECTION -->
+				<a class="exit-off-canvas"></a>
+			</div>
+			<!-- END OFF-CANVAS WRAP -->
+
+			<script src="bower_components/foundation/js/foundation.min.js"></script>
+			<script src="js/app.js"></script>
+			<!-- // <script src="js/foundation/foundation.offcanvas.js"></script> -->
+		</body>
+		</html>

@@ -1,41 +1,41 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway);
-/* line 1454, ../scss/_settings.scss */
+/* line 1456, ../scss/_settings.scss */
 .header {
   text-align: center;
   border-bottom: thin #c2c0c0 solid;
 }
 
-/* line 1459, ../scss/_settings.scss */
+/* line 1461, ../scss/_settings.scss */
 .center-text {
   text-align: center;
 }
 
-/* line 1463, ../scss/_settings.scss */
+/* line 1465, ../scss/_settings.scss */
 .content {
   margin-top: 40px;
 }
 
-/* line 1468, ../scss/_settings.scss */
+/* line 1470, ../scss/_settings.scss */
 .footer {
   margin-top: 40px;
   padding-bottom: 10px;
   text-align: center;
 }
-/* line 1473, ../scss/_settings.scss */
+/* line 1475, ../scss/_settings.scss */
 .footer .icons a {
   margin-right: 5px;
   margin-left: 5px;
 }
-/* line 1478, ../scss/_settings.scss */
+/* line 1480, ../scss/_settings.scss */
 .footer a {
   color: #c2c0c0;
 }
-/* line 1480, ../scss/_settings.scss */
+/* line 1482, ../scss/_settings.scss */
 .footer a:hover {
   color: #ef5745;
 }
 
-/* line 1487, ../scss/_settings.scss */
+/* line 1489, ../scss/_settings.scss */
 .project_box {
   float: left;
   width: 280px;
@@ -43,41 +43,41 @@
   margin-left: 10px;
   margin-right: 10px;
 }
-/* line 1495, ../scss/_settings.scss */
+/* line 1497, ../scss/_settings.scss */
 .project_box:hover {
   opacity: 0.5;
 }
-/* line 1498, ../scss/_settings.scss */
+/* line 1500, ../scss/_settings.scss */
 .project_box .pic {
   max-width: 100%;
   max-height: 100%;
   margin-bottom: 10px;
   border-bottom: thin solid #c2c0c0;
 }
-/* line 1505, ../scss/_settings.scss */
+/* line 1507, ../scss/_settings.scss */
 .project_box .description {
   color: #c2c0c0;
   text-decoration: none;
 }
 
-/* line 1511, ../scss/_settings.scss */
+/* line 1513, ../scss/_settings.scss */
 .pic img {
   width: 100%;
   max-height: auto;
   padding-bottom: 10px;
 }
 
-/* line 1517, ../scss/_settings.scss */
+/* line 1519, ../scss/_settings.scss */
 .smaller-text {
   font-size: 0.75em;
 }
 
-/* line 1521, ../scss/_settings.scss */
+/* line 1523, ../scss/_settings.scss */
 .larger-text {
   font-size: 1.05em;
 }
 
-/* line 1525, ../scss/_settings.scss */
+/* line 1528, ../scss/_settings.scss */
 .full-page {
   margin: 0 0 0 0 !important;
   padding: 0 0 0 0 !important;
@@ -86,12 +86,11 @@
   min-height: 100vh;
   min-width: 100vw;
 }
-/* line 1532, ../scss/_settings.scss */
+/* line 1535, ../scss/_settings.scss */
 .full-page .bg {
   position: absolute;
   z-index: -1000;
-  background: url(bg.jpg) no-repeat center center fixed;
-  background-color: white;
+  background: url(../img/bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -99,7 +98,7 @@
   width: 100%;
   height: 100%;
 }
-/* line 1544, ../scss/_settings.scss */
+/* line 1546, ../scss/_settings.scss */
 .full-page .bg_overlay {
   position: absolute;
   z-index: -1000;
@@ -111,7 +110,7 @@
   width: 100%;
   height: 100%;
 }
-/* line 1555, ../scss/_settings.scss */
+/* line 1557, ../scss/_settings.scss */
 .full-page .home-title {
   top: 50%;
   /*left: 50%;*/
@@ -121,67 +120,104 @@
   height: 20%;
   margin-top: -10%;
   text-align: center;
-  color: #ef5745;
+  color: white;
 }
-/* line 1565, ../scss/_settings.scss */
+/* line 1567, ../scss/_settings.scss */
 .full-page .home-title h1, .full-page .home-title h3 {
   font-weight: bold;
 }
-/* line 1568, ../scss/_settings.scss */
-.full-page .home-title .arrow:hover {
+/* line 1571, ../scss/_settings.scss */
+.full-page .home-title .arrow a {
+  color: #ef5745;
+}
+/* line 1573, ../scss/_settings.scss */
+.full-page .home-title .arrow a:hover {
   -webkit-transition: 1s ease-in-out;
   -moz-transition: 1s ease-in-out;
   -o-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
-  -webkit-transform: translate(0, 1em);
-  -moz-transform: translate(0, 1em);
-  -o-transform: translate(0, 1em);
-  -ms-transform: translate(0, 1em);
-  transform: translate(0, 1em);
+  color: #ef5745;
 }
 
-/* line 1585, ../scss/_settings.scss */
-.tumblr_posts {
-  width: 100%;
-  position: relative;
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
-  float: left;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
+/* line 1586, ../scss/_settings.scss */
+.blog h3 {
+  border-bottom: thin solid #c2c0c0;
+}
+
+/* line 1591, ../scss/_settings.scss */
+.row.hero {
+  min-width: 100% !important;
+  min-height: 100% !important;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bg.jpg");
+  background-size: cover;
+  background-position: top center;
+  max-width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+  vertical-align: middle;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+}
+/* line 1605, ../scss/_settings.scss */
+.row.hero .logo {
+  top: 30%;
+  min-height: 10vh;
+}
+/* line 1609, ../scss/_settings.scss */
+.row.hero .arrow {
   text-align: center;
+  height: 30vh;
+  top: 40%;
+  left: 0;
+}
+/* line 1614, ../scss/_settings.scss */
+.row.hero .arrow a {
+  color: #ef5745;
+}
+/* line 1616, ../scss/_settings.scss */
+.row.hero .arrow a:hover {
+  color: #ef5745;
+}
+
+/* line 1624, ../scss/_settings.scss */
+.tumblr_posts {
+  text-align: left;
   list-style: none;
   list-style-type: none;
 }
-/* line 1596, ../scss/_settings.scss */
+/* line 1628, ../scss/_settings.scss */
 .tumblr_posts li {
-  width: 90%;
-  margin-left: auto !important;
-  margin-right: auto !important;
+  width: 40%;
+  margin-left: 5%;
+  margin-right: 5%;
   padding-top: 25px !important;
   padding-bottom: 25px !important;
-  border-bottom: thin solid #c2c0c0;
+  float: left;
+  min-height: 250px;
 }
-/* line 1603, ../scss/_settings.scss */
+/* line 1637, ../scss/_settings.scss */
 .tumblr_posts li a {
-  font-size: 1.6875rem;
+  font-size: 1.1rem;
   color: dimgray !important;
 }
-/* line 1606, ../scss/_settings.scss */
+/* line 1640, ../scss/_settings.scss */
 .tumblr_posts li a:hover {
   color: #ef5745 !important;
 }
-/* line 1611, ../scss/_settings.scss */
+/* line 1645, ../scss/_settings.scss */
 .tumblr_posts li .tumblr_description .link_og_blockquote {
   border: none !important;
   color: #c2c0c0 !important;
   margin-bottom: 0px !important;
 }
-/* line 1616, ../scss/_settings.scss */
+/* line 1650, ../scss/_settings.scss */
 .tumblr_posts li .tumblr_description p {
   color: #c2c0c0;
+  font-size: 80%;
+  font-style: italic;
 }
-/* line 1625, ../scss/_settings.scss */
+/* line 1662, ../scss/_settings.scss */
 .tumblr_posts li .tumblr_caption p {
   margin-top: 5px;
   color: #c2c0c0;
@@ -189,31 +225,57 @@
 }
 
 /* remove scroll bars in Safari */
-/* line 1635, ../scss/_settings.scss */
+/* line 1673, ../scss/_settings.scss */
 .off-canvas-wrap .main-section:-webkit-scrollbar {
   display: none;
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 1641, ../scss/_settings.scss */
+  /* line 1679, ../scss/_settings.scss */
+  .row {
+    padding-bottom: 15px !important;
+    padding-top: 15px !important;
+  }
+
+  /* line 1683, ../scss/_settings.scss */
+  .content {
+    margin-top: 0px !important;
+  }
+
+  /* line 1686, ../scss/_settings.scss */
   body, html {
     height: 100%;
     width: 100%;
   }
 
-  /* line 1645, ../scss/_settings.scss */
+  /* line 1690, ../scss/_settings.scss */
   .off-canvas-wrap, .inner-wrap {
     height: 100%;
   }
 
-  /* line 1649, ../scss/_settings.scss */
+  /* line 1694, ../scss/_settings.scss */
   .off-canvas-wrap .main-section {
     height: 100%;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
   }
+
+  /* line 1701, ../scss/_settings.scss */
+  .tumblr_posts li {
+    width: 90% !important;
+  }
+
+  /* line 1705, ../scss/_settings.scss */
+  #instafeed {
+    text-align: center !important;
+  }
+  /* line 1707, ../scss/_settings.scss */
+  #instafeed img {
+    padding: 10px;
+    width: 300px !important;
+  }
 }
-/* line 1657, ../scss/_settings.scss */
+/* line 1715, ../scss/_settings.scss */
 #loader {
   position: absolute;
   top: 50%;
@@ -224,7 +286,7 @@
   margin-top: -40px;
 }
 
-/* line 1667, ../scss/_settings.scss */
+/* line 1725, ../scss/_settings.scss */
 #loading_title {
   text-align: center;
   color: #ef5745;
@@ -237,9 +299,25 @@
   z-index: 999;
 }
 
-/* line 1681, ../scss/_settings.scss */
+/* line 1738, ../scss/_settings.scss */
+#instafeed {
+  text-align: left;
+}
+/* line 1740, ../scss/_settings.scss */
 #instafeed img {
-  padding: 3px 3px 3px 3px;
+  padding: 10px;
+  width: 186px;
+}
+
+/* line 1746, ../scss/_settings.scss */
+.row {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+/* line 1753, ../scss/_settings.scss */
+.pastExperience a img {
+  padding-bottom: 40px;
 }
 
 /* line 347, ../bower_components/foundation/scss/foundation/components/_global.scss */
@@ -8279,17 +8357,17 @@ blockquote p {
 /* line 291, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
 .tab-bar {
   -webkit-backface-visibility: hidden;
-  background: #333333;
-  color: #ef5745;
-  height: 2.8125rem;
-  line-height: 2.8125rem;
+  background: transparent;
+  color: #555555;
+  height: 4.375rem;
+  line-height: 4.375rem;
   position: relative;
 }
 /* line 168, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
 .tab-bar h1, .tab-bar h2, .tab-bar h3, .tab-bar h4, .tab-bar h5, .tab-bar h6 {
-  color: #ef5745;
+  color: #555555;
   font-weight: bold;
-  line-height: 2.8125rem;
+  line-height: 4.375rem;
   margin: 0;
 }
 /* line 174, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
@@ -8299,21 +8377,21 @@ blockquote p {
 
 /* line 293, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
 .left-small {
-  width: 2.8125rem;
-  height: 2.8125rem;
+  width: 4.375rem;
+  height: 4.375rem;
   position: absolute;
   top: 0;
-  border-right: solid 1px #1a1a1a;
+  border-right: none;
   left: 0;
 }
 
 /* line 294, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
 .right-small {
-  width: 2.8125rem;
-  height: 2.8125rem;
+  width: 4.375rem;
+  height: 4.375rem;
   position: absolute;
   top: 0;
-  border-left: solid 1px #1a1a1a;
+  border-left: none;
   right: 0;
 }
 
@@ -8322,7 +8400,7 @@ blockquote p {
   padding: 0 0.625rem;
   position: absolute;
   text-align: center;
-  height: 2.8125rem;
+  height: 4.375rem;
   top: 0;
 }
 @media only screen and (min-width: 40.063em) {
@@ -8334,24 +8412,24 @@ blockquote p {
 /* line 207, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
 .tab-bar-section.left {
   left: 0;
-  right: 2.8125rem;
+  right: 4.375rem;
 }
 /* line 211, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
 .tab-bar-section.right {
-  left: 2.8125rem;
+  left: 4.375rem;
   right: 0;
 }
 /* line 215, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
 .tab-bar-section.middle {
-  left: 2.8125rem;
-  right: 2.8125rem;
+  left: 4.375rem;
+  right: 4.375rem;
 }
 
 /* line 300, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
 .tab-bar .menu-icon {
   text-indent: 2.1875rem;
-  width: 2.8125rem;
-  height: 2.8125rem;
+  width: 4.375rem;
+  height: 4.375rem;
   display: block;
   padding: 0;
   color: #ef5745;
@@ -8365,14 +8443,14 @@ blockquote p {
   display: block;
   height: 0;
   top: 50%;
-  margin-top: -0.5rem;
-  left: 0.90625rem;
-  box-shadow: 0 0px 0 1px #ef5745, 0 7px 0 1px #ef5745, 0 14px 0 1px #ef5745;
-  width: 1rem;
+  margin-top: -0.9375rem;
+  left: 1.25rem;
+  box-shadow: 0 0px 0 2px #ef5745, 0 12px 0 2px #ef5745, 0 24px 0 2px #ef5745;
+  width: 1.875rem;
 }
 /* line 162, ../bower_components/foundation/scss/foundation/components/_global.scss */
 .tab-bar .menu-icon span:hover:after {
-  box-shadow: 0 0px 0 1px #c72411, 0 7px 0 1px #c72411, 0 14px 0 1px #c72411;
+  box-shadow: 0 0px 0 2px #c72411, 0 12px 0 2px #c72411, 0 24px 0 2px #c72411;
 }
 
 /* line 324, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
@@ -8441,7 +8519,7 @@ ul.off-canvas-list {
 ul.off-canvas-list li label {
   display: block;
   padding: 0.3rem 0.9375rem;
-  color: #ef5745;
+  color: #999999;
   text-transform: uppercase;
   font-size: 0.75rem;
   font-weight: bold;
@@ -8460,7 +8538,7 @@ ul.off-canvas-list li a {
 }
 /* line 247, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
 ul.off-canvas-list li a:hover {
-  background: #242424;
+  background: transparent;
 }
 
 /* line 333, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
@@ -8674,7 +8752,7 @@ ul.off-canvas-list li a:hover {
 /* line 424, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
 .left-submenu .back > a {
   padding: 0.3rem 0.9375rem;
-  color: #ef5745;
+  color: #999999;
   text-transform: uppercase;
   font-weight: bold;
   background: #444444;
@@ -8738,7 +8816,7 @@ ul.off-canvas-list li a:hover {
 /* line 424, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
 .right-submenu .back > a {
   padding: 0.3rem 0.9375rem;
-  color: #ef5745;
+  color: #999999;
   text-transform: uppercase;
   font-weight: bold;
   background: #444444;

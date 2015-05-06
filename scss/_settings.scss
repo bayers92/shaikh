@@ -811,74 +811,76 @@ $h6-font-size: 1rem;
 // 18. Off-canvas
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
+// Off Canvas Tab Bar Variables
 // $include-html-off-canvas-classes: $include-html-classes;
 
-$tabbar-bg: $oil;
-$tabbar-height: rem-calc(45);
+$tabbar-bg: rgba(0,0,0,0);
+$tabbar-height: rem-calc(70);
 $tabbar-icon-width: $tabbar-height;
 $tabbar-line-height: $tabbar-height;
-$tabbar-color: $primary-color;
+$tabbar-color: $charcoal;
 $tabbar-middle-padding: 0 rem-calc(10);
 
 // Off Canvas Divider Styles
-$tabbar-right-section-border: solid 1px scale-color($tabbar-bg, $lightness: 13%);
-$tabbar-left-section-border: solid 1px scale-color($tabbar-bg, $lightness: -50%);
+$tabbar-left-section-border: none;
+$tabbar-right-section-border: none;
+
 
 // Off Canvas Tab Bar Headers
-$tabbar-header-color: $primary-color;
-$tabbar-header-weight: $font-weight-bold;
+$tabbar-header-color: $charcoal;
+// $tabbar-header-weight: $font-weight-bold;
 $tabbar-header-line-height: $tabbar-height;
 $tabbar-header-margin: 0;
 
 // Off Canvas Menu Variables
-$off-canvas-width: rem-calc(250);
-$off-canvas-bg: $oil;
-$off-canvas-bg-hover: scale-color($tabbar-bg, $lightness: -30%);
+// $off-canvas-width: rem-calc(250);
+// $off-canvas-bg: $oil;
 
 // Off Canvas Menu List Variables
-$off-canvas-label-padding: 0.3rem rem-calc(15);
-$off-canvas-label-color: $primary-color;
-$off-canvas-label-text-transform: uppercase;
-$off-canvas-label-font-size: rem-calc(12);
-$off-canvas-label-font-weight: $font-weight-bold;
-$off-canvas-label-bg: $tuatara;
-$off-canvas-label-border-top: 1px solid scale-color($tuatara, $lightness: 14%);
-$off-canvas-label-border-bottom: none;
-$off-canvas-label-margin:0;
-$off-canvas-link-padding: rem-calc(10, 15);
-$off-canvas-link-color: rgba($white, 0.7);
-$off-canvas-link-border-bottom: 1px solid scale-color($off-canvas-bg, $lightness: -25%);
-$off-canvas-back-bg: $tuatara;
-$off-canvas-back-border-top: $off-canvas-label-border-top;
-$off-canvas-back-border-bottom: $off-canvas-label-border-bottom;
-$off-canvas-back-hover-bg: scale-color($off-canvas-back-bg, $lightness: -30%);
-$off-canvas-back-hover-border-top: 1px solid scale-color($off-canvas-label-bg, $lightness: 14%);
-$off-canvas-back-hover-border-bottom: none;
+// $off-canvas-label-padding: 0.3rem rem-calc(15);
+// $off-canvas-label-color: $aluminum;
+// $off-canvas-label-text-transform: uppercase;
+// $off-canvas-label-font-size: rem-calc(12);
+// $off-canvas-label-font-weight: $font-weight-bold;
+// $off-canvas-label-bg: $tuatara;
+// $off-canvas-label-border-top: 1px solid scale-color($off-canvas-label-bg, $lightness: 14%);
+// $off-canvas-label-border-bottom: none;
+// $off-canvas-label-margin:0;
+// $off-canvas-link-padding: rem-calc(10, 15);
+// $off-canvas-link-color: rgba($white, 0.7);
+// $off-canvas-link-border-bottom: 1px solid scale-color($off-canvas-bg, $lightness: -25%);
+// $off-canvas-back-bg: #444;
+// $off-canvas-back-border-top: $off-canvas-label-border-top;
+// $off-canvas-back-border-bottom: $off-canvas-label-border-bottom;
+// $off-canvas-back-hover-bg: scale-color($off-canvas-back-bg, $lightness: -30%);
+// $off-canvas-back-hover-border-top: 1px solid scale-color($off-canvas-label-bg, $lightness: 14%);
+// $off-canvas-back-hover-border-bottom: none;
 
 // Off Canvas Menu Icon Variables
 $tabbar-menu-icon-color: $primary-color;
 $tabbar-menu-icon-hover: scale-color($tabbar-menu-icon-color, $lightness: -30%);
 
 $tabbar-menu-icon-text-indent: rem-calc(35);
-$tabbar-menu-icon-width: $tabbar-height;
+$tabbar-menu-icon-width: $tabbar-icon-width;
 $tabbar-menu-icon-height: $tabbar-height;
 $tabbar-menu-icon-padding: 0;
 
-$tabbar-hamburger-icon-width: rem-calc(16);
+$tabbar-hamburger-icon-width: rem-calc(30);
 $tabbar-hamburger-icon-left: false;
 $tabbar-hamburger-icon-top: false;
-$tabbar-hamburger-icon-thickness: 1px;
-$tabbar-hamburger-icon-gap: 6px;
+$tabbar-hamburger-icon-thickness: 2px;
+$tabbar-hamburger-icon-gap: 10px;
 
 // Off Canvas Back-Link Overlay
-$off-canvas-overlay-transition: background 300ms ease;
-$off-canvas-overlay-cursor: pointer;
-$off-canvas-overlay-box-shadow: -4px 0 4px rgba($black, 0.5), 4px 0 4px rgba($black, 0.5);
-$off-canvas-overlay-background: rgba($white, 0.2);
-$off-canvas-overlay-background-hover: rgba($white, 0.05);
+// $off-canvas-overlay-transition: background 300ms ease;
+// $off-canvas-overlay-cursor: pointer;
+// $off-canvas-overlay-box-shadow: -4px 0 4px rgba($black, 0.5), 4px 0 4px rgba($black, 0.5);
+// $off-canvas-overlay-background: rgba($white, 0.2);
+// $off-canvas-overlay-background-hover: rgba($white, 0.05);
 
 // Transition Variables
-$menu-slide: "transform 500ms ease";
+// $menu-slide: "transform 500ms ease";
+
 
 // 19. Orbit
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -1522,6 +1524,7 @@ $menu-slide: "transform 500ms ease";
 	font-size: 1.05em;
 }
 
+// Landing Page
 .full-page {
 	margin: 0 0 0 0 !important;
 	padding: 0 0 0 0 !important;
@@ -1532,25 +1535,24 @@ $menu-slide: "transform 500ms ease";
 	.bg {
 		position: absolute;
 		z-index: -1000;
-		background: url(bg.jpg) no-repeat center center fixed; 
-		background-color: white;
-	 	-webkit-background-size: cover;
-	 	-moz-background-size: cover;
-	 	-o-background-size: cover;
-	 	background-size: cover;
-	 	width: 100%;
-	 	height: 100%;
+		background: url(../img/bg.jpg) no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		width: 100%;
+		height: 100%;
 	}
 	.bg_overlay{
 		position: absolute;
 		z-index: -1000;
 		background: rgba(0, 0, 0, 0.5);
-	 	-webkit-background-size: cover;
-	 	-moz-background-size: cover;
-	 	-o-background-size: cover;
-	 	background-size: cover;
-	 	width: 100%;
-	 	height: 100%;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		width: 100%;
+		height: 100%;
 	}
 	.home-title {	
 		top: 50%;
@@ -1561,47 +1563,79 @@ $menu-slide: "transform 500ms ease";
 		height: 20%;
 		margin-top: -10%;
 		text-align: center;
-		color: $primary-color;
+		color: $white;
 		h1, h3 {
 			font-weight: bold;
 		}
-		.arrow:hover {
-			-webkit-transition: 1s ease-in-out;
-			-moz-transition: 1s ease-in-out;
-			-o-transition: 1s ease-in-out;
-			transition: 1s ease-in-out;
-			-webkit-transform: translate(0, 1em);
-			-moz-transform: translate(0, 1em);
-			-o-transform: translate(0, 1em);
-			-ms-transform: translate(0, 1em);
-			transform: translate(0, 1em);
+		.arrow {
+			a {
+				color: $primary-color;
+				&:hover {
+					-webkit-transition: 1s ease-in-out;
+					-moz-transition: 1s ease-in-out;
+					-o-transition: 1s ease-in-out;
+					transition: 1s ease-in-out;
+					color: $primary-color;
+				}
+			}
 		}
 	}
 }
 
+.blog {
+	h3 {
+		border-bottom: thin solid #c2c0c0;
+	}
+}
 
+.row.hero {
+	min-width: 100% !important;
+	min-height: 100% !important;
+	$bg: '../img/bg.jpg';
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),  url($bg);
+	background-size: cover;
+	background-position: top center;
+	max-width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+	vertical-align: middle;
+	z-index: -1;
+	height: 100vh;
+	width: 100vw;
+	.logo {
+		top: 30%;
+		min-height: 10vh;
+	}
+	.arrow {
+		text-align: center;
+		height: 30vh;
+		top: 40%;
+		left: 0;
+		a {
+			color: $primary-color;
+			&:hover {
+				color: $primary-color;
+			}
+		}
+	}
+}
 
 // TUMBLR IMPORT SETTINGS
 .tumblr_posts {
-	width: 100%;
-	position: relative;
-	padding-left: 0.9375rem;
-	padding-right: 0.9375rem;
-	float: left;
-	margin-left: 0 !important;
-	margin-right: 0 !important;
-	text-align: center;
+	text-align: left;
 	list-style:none;
 	list-style-type: none;
 	li {
-		width: 90%;
-		margin-left: auto !important;
-		margin-right: auto !important;
+		width: 40%;
+		margin-left: 5%;
+		margin-right: 5%;
 		padding-top: 25px !important;
 		padding-bottom: 25px !important;
-		border-bottom: thin solid $medium-gray;
+		// border-bottom: thin solid $medium-gray;
+		float: left;
+		min-height: 250px;
 		a {
-			font-size: $h3-font-size;
+			font-size: 1.1rem;
 			color: $dark-gray !important;
 			&:hover {
 				color: $primary-color !important;
@@ -1616,6 +1650,9 @@ $menu-slide: "transform 500ms ease";
 			p {
 				color: $medium-gray;
 				// font-style: italic;
+				// display: none;
+				font-size: 80%;
+				font-style: italic;
 			}
 		}
 		img {
@@ -1631,6 +1668,7 @@ $menu-slide: "transform 500ms ease";
 	}
 }
 
+
 /* remove scroll bars in Safari */
 .off-canvas-wrap .main-section:-webkit-scrollbar { 
     display: none; 
@@ -1638,6 +1676,13 @@ $menu-slide: "transform 500ms ease";
 // 
 // OFFCANVAS NAV BAR FIX START
 @media #{$small-only} {
+	.row {
+		padding-bottom: 15px !important;
+		padding-top: 15px !important;
+	}
+	.content {
+		margin-top: 0px !important;
+	}
 	body,html{
 	    height:100%;
 	    width:100%;
@@ -1650,6 +1695,19 @@ $menu-slide: "transform 500ms ease";
 	{
 	  height: 100%; overflow:scroll;
 	  -webkit-overflow-scrolling: touch;
+	}
+
+	.tumblr_posts {
+		li {
+			width: 90% !important;
+		}
+	}
+	#instafeed {
+		text-align: center !important;
+		img {
+			padding: 10px;
+			width: 300px !important;
+		}
 	}
 }
 // OFFCANVAS NAV BAR FIX END
@@ -1678,7 +1736,22 @@ $menu-slide: "transform 500ms ease";
 
 
 #instafeed {
+	text-align: left;
 	img {
-		padding: 3px 3px 3px 3px;
+		padding: 10px;
+		width: 186px;
+	}
+}
+
+.row {
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+
+.pastExperience {
+	a {
+		img {
+			padding-bottom: 40px;
+		}
 	}
 }
